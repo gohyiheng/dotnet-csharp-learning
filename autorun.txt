@@ -1,0 +1,12 @@
+Hello World!
+7
+i will be on the same line
+you will need to manually add a new line using '\n' 
+test user456
+456 test user
+new num: 543
+6, abc
+3
+Enter your username: username is: 12
+Enter your age: your age is: 12
+2

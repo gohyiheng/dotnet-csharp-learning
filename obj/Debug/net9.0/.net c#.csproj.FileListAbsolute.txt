@@ -1,0 +1,14 @@
+C:\Users\yihen\.net c#\bin\Debug\net9.0\.net c#.exe
+C:\Users\yihen\.net c#\bin\Debug\net9.0\.net c#.deps.json
+C:\Users\yihen\.net c#\bin\Debug\net9.0\.net c#.runtimeconfig.json
+C:\Users\yihen\.net c#\bin\Debug\net9.0\.net c#.dll
+C:\Users\yihen\.net c#\bin\Debug\net9.0\.net c#.pdb
+C:\Users\yihen\.net c#\obj\Debug\net9.0\.net c#.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\yihen\.net c#\obj\Debug\net9.0\.net c#.AssemblyInfoInputs.cache
+C:\Users\yihen\.net c#\obj\Debug\net9.0\.net c#.AssemblyInfo.cs
+C:\Users\yihen\.net c#\obj\Debug\net9.0\.net c#.csproj.CoreCompileInputs.cache
+C:\Users\yihen\.net c#\obj\Debug\net9.0\.net c#.dll
+C:\Users\yihen\.net c#\obj\Debug\net9.0\refint\.net c#.dll
+C:\Users\yihen\.net c#\obj\Debug\net9.0\.net c#.pdb
+C:\Users\yihen\.net c#\obj\Debug\net9.0\.net c#.genruntimeconfig.cache
+C:\Users\yihen\.net c#\obj\Debug\net9.0\ref\.net c#.dll

@@ -1,0 +1,16 @@
+Shortcut	Expands to	Description
+cw	Console.WriteLine();	Print to console
+prop	public type Name { get; set; }	Auto-implemented property
+propfull	Full property with backing field	More control over getter/setter
+for	for (int i = 0; i < length; i++) { }	Standard for loop
+foreach	foreach (var item in collection) { }	foreach loop
+if	if (condition) { }	Simple if statement
+else	else { }	else block
+switch	switch (expression) { case ... }	switch block
+while	while (condition) { }	while loop
+do	do { } while (condition);	do-while loop
+try	try { } catch (Exception) { }	Error handling
+tryf	try { } finally { }	try-finally block
+class	public class ClassName { }	Class template
+ctor	public ClassName() { }	Constructor
+main	static void Main(string[] args)	Main method skeleton
