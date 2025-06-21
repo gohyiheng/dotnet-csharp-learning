@@ -161,3 +161,56 @@ basically invokes 3 different overloaded version of the WriteLine method, int, n
 // }
 
 // -----------------------------------------------------------------
+
+//string[] fraudIds = new string[5]; // first string[] sets the string array and [5] tells us that the array has 5 index
+// able to use other primatives such as int or bool 
+
+// fraudIds[0] = "123";
+// fraudIds[1] = "456";
+// fraudIds[2] = "789";
+// fraudIds[3] = "999";
+// fraudIds[4] = "111";
+// fraudIds[5] = "D000";  Index was outside the bounds of the array.
+
+// string[] fraudIds = ["123", "456", "789"];
+
+// // access based on index
+// System.Console.WriteLine($"First fraud detected: {fraudIds[0]}");
+// System.Console.WriteLine($"Second fraud detected: {fraudIds[1]}");
+// System.Console.WriteLine($"Third fraud detected: {fraudIds[2]}");
+
+// fraudIds[0] = "000";
+// System.Console.WriteLine($"Reassigned fruad: {fraudIds[0]}");
+
+// System.Console.WriteLine($"There are {fraudIds.Length} fruads to process");
+
+// // access based on iteration
+// foreach (string fraudId in fraudIds)
+// {
+//     System.Console.WriteLine(fraudId);
+// }
+
+// int[] peanuts = { 1, 2, 3, 4, 5, };
+// int sum = 0;
+// int count = 0;
+// foreach (int peanut in peanuts)
+// {
+//     sum += peanut;
+//     count++;
+// }
+// System.Console.WriteLine($"Total sum is: {sum}");
+// System.Console.WriteLine($"There are {count} items and the total is {sum}");
+
+// System.Console.WriteLine("---------------------------------------");
+
+// string[] orderIds = { "B123", "C234", "A345", "C15", "B177", "G3303", "C235", "B179" };
+// foreach (string orderId in orderIds)
+// {
+//     if (orderId.StartsWith("B"))
+//     {
+//         System.Console.WriteLine(orderId);
+//     }
+// }
+
+
+// -----------------------------------------------------------------
