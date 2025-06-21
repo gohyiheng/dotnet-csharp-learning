@@ -214,3 +214,34 @@ basically invokes 3 different overloaded version of the WriteLine method, int, n
 
 
 // -----------------------------------------------------------------
+// Variable names can contain alphanumeric characters and the underscore (_) character. Special characters like the pound #, the dash -, and the dollar sign $ are not allowed.
+// begin with an alphabetical letter or an underscore, underscore character to start a variable name is typically reserved for private instance fields.
+//  NOT be a C# keyword,  case-sensitive
+// Variable names should use camel case,
+
+/*
+    code counts the number of times a char appears in the string and prints 
+    it to console
+*/
+// string str = "The quick brown fox jumps over the lazy dog.";
+
+// char[] charMessage = str.ToCharArray();
+// Array.Reverse(charMessage);
+
+// int x = 0; // letterCoubt
+
+// foreach (char i in charMessage) // letter
+// {
+//     if (i == 'o')
+//     {
+//         x++;
+//     }
+// }
+
+// string new_message = new String(charMessage);
+
+// Console.WriteLine(new_message);
+// Console.WriteLine($"'o' appears {x} times.");
+
+// -----------------------------------------------------------------
+
