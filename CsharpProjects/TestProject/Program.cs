@@ -445,3 +445,204 @@ basically invokes 3 different overloaded version of the WriteLine method, int, n
 // Console.WriteLine($"Product: {size} {color} {type}");
 
 // -----------------------------------------------------------------
+
+// for (int i = 0; i < 10; i++)
+// {
+//     Console.WriteLine(i);
+//     if (i == 7) break;
+// }
+
+// string[] names = { "Alex", "Eddie", "David", "Michael" };
+// foreach (var name in names)
+// {
+//     // Can't do this:
+//     // if (name == "David") name = "Sammy";
+// }
+
+// cannot assign names in a foreach iteration, however if we use the index to iterate, we can update the array 
+
+// string[] names = { "Alex", "Eddie", "David", "Michael" };
+
+// for (int i = 0; i < names.Length; i++)
+// {
+//     if (names[i] == "David")
+//     {
+//         names[i] = "Sammy";
+//     }
+// }
+
+// foreach (var name in names)
+// {
+//     Console.WriteLine(name);
+// }
+
+// Fizzbuzz
+
+// for (int i = 1; i <= 100; i++)
+// {
+//     if (i % 3 == 0 && i % 5 == 0)
+//     {
+//         System.Console.WriteLine(i + " - FizzBuzz");
+//     }
+//     else if (i % 3 == 0)
+//     {
+//         System.Console.WriteLine(i + " - Fizz");
+//     }
+//     else if (i % 5 == 0)
+//     {
+//         System.Console.WriteLine(i + " - Buzz");
+//     }
+//     else
+//     {
+//         System.Console.WriteLine(i);
+//     }
+
+// }
+
+// -----------------------------------------------------------------
+
+// Random random = new Random();
+// int current = 0;
+
+// do
+// {
+//     current = random.Next(1, 11);
+//     Console.WriteLine(current);
+// } while (current != 7);
+
+// does a certain action and continue doing it till it checks the while case, in this case if it rolls 7 it will print it before ending executes a code block at least once.
+
+// Random random = new Random();
+// int current = random.Next(1, 11);
+
+// while (current >= 3)
+// {
+//     Console.WriteLine(current);
+//     current = random.Next(1, 11);
+// }
+// Console.WriteLine($"Last number: {current}");
+
+// in this case if it rolls a 2 or 1 it will not print 2 or 1 in the while loop but instead terminate it
+
+// mini proj rpg
+// int monsterHp = 10, heroHp = 10;
+
+// Random attackDamage = new();
+// int damage;
+// string turn = "hero";
+
+// do
+// {
+//     if (turn == "hero")
+//     {
+//         damage = attackDamage.Next(1, 10);
+//         monsterHp -= damage;
+//         System.Console.WriteLine($"Monster was damaged and lost {damage} health and now has {monsterHp} health.");
+//         turn = "monster";
+//     }
+//     else if (turn == "monster")
+//     {
+//         damage = attackDamage.Next(1, 10);
+//         heroHp -= damage;
+//         System.Console.WriteLine($"Hero was damaged and lost {damage} health and now has {heroHp} health.");
+//         turn = "hero";
+//     }
+
+
+// } while (monsterHp > 0 && heroHp > 0);
+
+// System.Console.WriteLine(heroHp > monsterHp ? $"Hero wins with {heroHp} Hp" : $"Monster wins with {monsterHp} Hp");
+
+// string? readResult;
+// bool validEntry = false;
+// Console.WriteLine("Enter a string containing at least three characters:");
+// do
+// {
+//     readResult = Console.ReadLine();
+//     if (readResult != null)
+//     {
+//         if (readResult.Length >= 3)
+//         {
+//             validEntry = true;
+//         }
+//         else
+//         {
+//             Console.WriteLine("Your input is invalid, please try again.");
+//         }
+//     }
+// } while (validEntry == false);
+
+// code proj 1 validate int input
+
+// String? userInput;
+// int converted;
+// bool validateEntry = false;
+// System.Console.WriteLine("Enter an integer value between 5 and 10");
+// do
+// {
+//     userInput = Console.ReadLine();
+//     try
+//     {
+//         converted = Convert.ToInt32(userInput);
+//         if (converted > 4 && converted < 11)
+//         {
+//             System.Console.WriteLine($"Your input value ({converted}) has been accepted");
+//             validateEntry = true;
+//         }
+//         else
+//         {
+//             System.Console.WriteLine($"You entered {converted}. Please enter a number between 5 and 10.");
+//         }
+//     }
+//     catch (Exception e)
+//     {
+//         System.Console.WriteLine("Sorry, you entered an invalid number please try again");
+//     }
+// } while (!validateEntry);
+
+// proj 2 validate string input
+// String? userInput;
+// bool notvalidated = false;
+// System.Console.WriteLine("Enter your role name (Administrator, Manager, or User)");
+// do
+// {
+//     userInput = Console.ReadLine();
+//     if (userInput != null)
+//     {
+//         if (userInput.Trim().ToLower() == "administrator" || userInput.Trim().ToLower() == "manager" || userInput.Trim().ToLower() == "user")
+//         {
+//             notvalidated = true;
+//         }
+//         else
+//         {
+//             System.Console.WriteLine($"The role name that you entered, \"{userInput}\" is not valid. Enter your role name (Administrator, Manager, or User)");
+//         }
+//     }
+// } while (!notvalidated);
+
+// System.Console.WriteLine($"Your input value ({userInput}) has been accepted.");
+
+// proj 3 process contetn of string array 
+// string[] myStrings = new string[2] { "I like pizza. I like roast chicken. I like salad", "I like all three of the menu choices" };
+// string outputString;
+// string currentString = "";  
+// int periodLocation = 0;
+
+// for (int i = 0; i < myStrings.Length; i++)
+// {
+//     currentString = myStrings[i];
+//     periodLocation = currentString.IndexOf(".");
+
+//     while (periodLocation != -1)
+//     {
+//         outputString = currentString.Remove(periodLocation);
+
+//         currentString = currentString.Substring(periodLocation + 1);
+//         currentString = currentString.TrimStart();
+//         periodLocation = currentString.IndexOf(".");
+//         System.Console.WriteLine(outputString);
+//     }
+    
+
+//     Console.WriteLine(currentString);
+// }
