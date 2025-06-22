@@ -245,3 +245,203 @@ basically invokes 3 different overloaded version of the WriteLine method, int, n
 
 // -----------------------------------------------------------------
 
+// Console.WriteLine("a" == "a");
+// Console.WriteLine("a" == "A");
+// Console.WriteLine(1 == 2);
+
+// string myValue = "a";
+// Console.WriteLine(myValue == "a");
+
+// string value1 = " a";
+// string value2 = "A ";
+// Console.WriteLine(value1.Trim().ToLower() == value2.Trim().ToLower());
+
+// Console.WriteLine("a" != "a");
+// Console.WriteLine("a" != "A");
+// Console.WriteLine(1 != 2);
+
+// Console.WriteLine(myValue != "a");
+
+// string pangram = "The quick brown fox jumps over the lazy dog.";
+// Console.WriteLine(pangram.Contains("fox"));
+// Console.WriteLine(pangram.Contains("cow"));
+// // These two lines of code will create the same output
+
+// Console.WriteLine(pangram.Contains("fox") == false);
+// Console.WriteLine(!pangram.Contains("fox"));
+
+// int saleAmount = 1001;
+// int discount = saleAmount > 1000 ? 100 : 50; // if sale amt > 1000 -> true: return 100 else return 50
+// Console.WriteLine($"Discount: {discount}");
+
+// write code to display the result of a coin flip 
+
+// Random coinFlip = new();
+// int flip = coinFlip.Next(2);
+// System.Console.WriteLine($"The coin landed on: {(flip == 0 ? "Heads" : "Tails")}");
+
+// string permission = "Manager";
+// int level = 10;
+
+// if (permission == "Admin")
+// {
+//     System.Console.WriteLine(level > 55 ? "Welcome, Super Admin user." : "Welcome, Admin user.");
+// }
+// else if (permission == "Manager")
+// {
+//     System.Console.WriteLine(level > 20 ? "Contact an Admin for access." : "You do not have sufficient privileges.");
+// }
+// else
+// {
+//     System.Console.WriteLine("You do not have sufficient privileges.");
+// }
+
+// -----------------------------------------------------------------
+
+// bool flag = true;
+// if (flag)
+// {
+//     int value = 10;
+//     Console.WriteLine($"Inside the code block: {value}");
+// }
+// Console.WriteLine($"Outside the code block: {value}"); error CS0103: The name 'value' does not exist in the current context
+
+// Code sample 1
+// bool flag = true;
+// int value;
+
+// if (flag)
+// {
+//     value = 10;
+//     Console.WriteLine($"Inside the code block: {value}");
+// }
+
+// Console.WriteLine($"Outside the code block: {value}"); error CS0165: Use of unassigned local variable 'value' 
+// since the flag can either be true or false thus value would need to be declared a value
+
+// Code sample 2
+// int value;
+
+// if (true)
+// {
+//     value = 10;
+//     Console.WriteLine($"Inside the code block: {value}");
+// }
+
+// Console.WriteLine($"Outside the code block: {value}");
+// value would always be 10 since if statements always runs
+
+// bool flag = true;
+// if (flag) Console.WriteLine(flag); // only for single line if code however not as readable
+
+// int[] numbers = { 4, 8, 15, 16, 23, 42 };
+// int total = 0;
+// bool found = false;
+// foreach (int number in numbers)
+// {
+//     total += number;
+//     if (number == 42)
+//     {
+//        found = true;
+//     }
+// }
+
+// if (found) 
+// {
+//     Console.WriteLine("Set contains 42");
+// }
+
+// Console.WriteLine($"Total: {total}");
+
+// -----------------------------------------------------------------
+
+// int employeeLevel = 200;
+// string employeeName = "John Smith";
+
+// string title = "";
+
+// switch (employeeLevel)
+// {
+//     case 100:
+//         title = "Junior Associate";
+//         break;
+//     case 200:
+//         title = "Senior Associate";
+//         break;
+//     case 300:
+//         title = "Manager";
+//         break;
+//     case 400:
+//         title = "Senior Manager";
+//         break;
+//     default:
+//         title = "Associate";
+//         break;
+// }
+
+// Console.WriteLine($"{employeeName}, {title}");
+
+// SKU = Stock Keeping Unit. 
+// SKU value format: <product #>-<2-letter color code>-<size code>
+// string sku = "01-MN-L";
+
+// string[] product = sku.Split('-');
+
+// string type = "";
+// string color = "";
+// string size = "";
+
+// string productType = product[0];
+
+// switch (productType)
+// {
+//     case "01":
+//         type = "Sweat shirt";
+//         break;
+//     case "02":
+//         type = "T-Shirt";
+//         break;
+//     case "03":
+//         type = "Sweat pants";
+//         break;
+//     default:
+//         type = "Other";
+//         break;
+// }
+
+// string productColor = product[1];
+
+// switch (productColor)
+// {
+//     case "BL":
+//         color = "Black";
+//         break;
+//     case "MN":
+//         color = "Maroon";
+//         break;
+//     default:
+//         color = "White";
+//         break;
+// }
+
+// string productSize = product[2];
+
+// switch (productSize)
+// {
+//     case "S":
+//         size = "Small";
+//         break;
+//     case "M":
+//         size = "Medium";
+//         break;
+//     case "L":
+//         size = "Large";
+//         break;
+//     default:
+//         size = "One Size Fits All";
+//         break;
+// }
+
+// Console.WriteLine($"Product: {size} {color} {type}");
+
+// -----------------------------------------------------------------
